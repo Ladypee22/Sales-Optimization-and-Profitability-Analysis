@@ -21,7 +21,7 @@ Retail Sales  records was used in this analysis. The dataset was imported into p
  ## METHODOLOGY
 ### Here are my analysis
 
-### **1. Data Profiling, cleaning and preparation**
+### 1. Data Profiling, cleaning and preparation**
 Data profiling was conducted in Power Query to assess the dataset before analysis. The Column Quality, Column Distribution, and Column Profile features were used to understand the structure and content of each column.
 
 Duplicate Values
@@ -52,5 +52,5 @@ Text columns were trimmed and converted to lowercase where necessary to eliminat
 
 Unnecessary columns (e.g., Row ID) were removed to improve data cleanliness.
 
-### **2. Data Modelling
+### 2. Data Modelling
 To enhance the effectiveness of the analysis, the dataset schema was restructured from a flat schema to a star schema, improving data integrity and minimizing redundancy.
