@@ -21,4 +21,36 @@ Retail Sales  records was used in this analysis. The dataset was imported into p
  ## METHODOLOGY
 ### Here are my analysis
 
-### **1. Data Modeling**
+### **1. Data Profiling, cleaning and preparation**
+Data profiling was conducted in Power Query to assess the dataset before analysis. The Column Quality, Column Distribution, and Column Profile features were used to understand the structure and content of each column.
+
+Duplicate Values
+A unique ID was created using the CONCAT() function to help identify duplicate rows.
+Due to the dataset’s structure, the built-in "Remove Duplicates" feature in Power Query was not used. Instead, duplicates were manually identified and removed using the custom unique ID.
+
+Blanks
+The Column Quality feature showed that there were no blank cells or errors in any of the columns.
+
+Standardization
+Standardization was performed to ensure that all values within each column followed a consistent format across the dataset.
+
+Data Types & Transformations
+Data Types:
+Appropriate data types were assigned to each column. For example:
+
+Date columns (e.g., Order Date, Ship Date) were set to Date type.
+
+Categorical columns (e.g., Region, Segment, Category) were set to Text type.
+
+Numerical columns (e.g., Sales, Postal Code) were set to Decimal/Whole Number.
+
+Transformations Applied:
+
+Date columns were reformatted for consistency and to enable time-based analysis.
+
+Text columns were trimmed and converted to lowercase where necessary to eliminate formatting inconsistencies.
+
+Unnecessary columns (e.g., Row ID) were removed to improve data cleanliness.
+
+### **2. Data Modelling
+To enhance the effectiveness of the analysis, the dataset schema was restructured from a flat schema to a star schema, improving data integrity and minimizing redundancy.
