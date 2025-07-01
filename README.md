@@ -55,4 +55,6 @@ Unnecessary columns (e.g., Row ID) were removed to improve data cleanliness.
 ### 2. Data Modelling
 To enhance the effectiveness of the analysis, the dataset schema was restructured from a flat schema to a star schema, improving data integrity and minimizing redundancy. The table was converted into one fact table (Sales) and five dimension tables (DimOrder, DimCustomer, DimDate, DimLocation, DimProduct).
 
+## Analysis
+### Sales & Profitability Analysis
 
